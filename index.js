@@ -27,3 +27,4 @@ mongoose.connect(process.env.DB_URL , {useNewUrlParser: true},function(err,db){
     db.close;
 });
 mongoose.Promise = global.Promise;
+require('./app/controller/cron');
